@@ -18,9 +18,7 @@ const trace = label => tap(data => console.log(label, data));
 
 const transcribe = params => {
   const audioChunk$ = fromFile({filePath: params.inputFilePath});
-  console.log('auduioChunk', audioChunk$.pipe);
   const transcription$ = audioChunk$.pipe(
-    tap(console.log),
     toDeepgram(params)
   );
   return transcription$;
@@ -103,10 +101,16 @@ program
     defaults.outputPath
   )
   .option(
-    '--google-creds <googleCreds>',
-    'Path to GCP credential JSON file',
-    process.env.GOOGLE_APPLICATION_CREDENTIALS
+    '--username <username>',
+    'Deepgram username',
+    process.env.DEEPGRAM_USERNAME
   )
+  .option(
+    '--password <password>',
+    'Deepgram password',
+    process.env.DEEPGRAM_PASSWORD
+  )
+
   .action(options => runDemo({...options}))
 
 program.parse(process.argv);
