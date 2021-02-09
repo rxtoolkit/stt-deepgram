@@ -1,0 +1,66 @@
+{
+  "name": "@buccaneerai/stt-deepgram",
+  "version": "2.0.0",
+  "description": "👂 RxJS operator for realtime speech-to-text (STT/S2T) using Deepgram speeh-to-text",
+  "main": "dist/index.js",
+  "repository": "https://github.com/buccaneerai/stt-deepgram.git",
+  "author": "Buccaneer LLC <opensource@buccaneer.ai>",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/buccaneerai/stt-deepgram/issues"
+  },
+  "keywords": [
+    "speech-to-text",
+    "s2t",
+    "stt",
+    "transcription",
+    "transcribe",
+    "voice control",
+    "deepgram",
+    "speech recognition",
+    "rxjs",
+    "reactive",
+    "observables",
+    "stream",
+    "streaming",
+    "realtime"
+  ],
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "BABEL_ENV=build babel src --out-dir dist --source-maps --extensions .js --config-file ./babel.config.js --delete-dir-on-start --no-comments",
+    "test": "mocha --require @babel/register --require @babel/polyfill \"./{,!(node_modules)/**/}*.test.js\" --exit --require source-map-support",
+    "demo": "node ./scripts/demo.js"
+  },
+  "dependencies": {
+    "@bottlenose/rxws": "^0.7.0",
+    "lodash": "^4.17.20",
+    "qs": "^6.9.6",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/register": "^7.12.13",
+    "@bottlenose/rxfs": "^0.7.0",
+    "chai": "^4.2.0",
+    "commander": "^7.0.0",
+    "luxon": "^1.25.0",
+    "mocha": "^8.2.1",
+    "rxjs-marbles": "^6.0.1",
+    "sinon": "^9.2.4"
+  },
+  "engines": {
+    "node": ">= 11.0.0"
+  }
+}
