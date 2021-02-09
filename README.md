@@ -1,11 +1,11 @@
 # @buccaneerai/stt-deepgram
-> 👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the GCP speech-to-text API.
+> 👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the Deepgram speech-to-text API.
 
 ## Installation
 This is a private package. It requires setting up access in your npm config.
 
 ```bash
-yarn add @buccaneerai/stt-gcp
+yarn add @buccaneerai/stt-deepgram
 ```
 
 ⚠️ To run the Deepgram transcription pipeline, you will need to provide a deepgram username and password.
