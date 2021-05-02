@@ -13,12 +13,22 @@ const getAuthProtocol = ({username, password}) => {
   return ['Basic', base64Auth];
 };
 
-const getFullUrl = ({url, encoding, channels, sampleRate, interimResults}) => {
+const getFullUrl = ({
+  url,
+  encoding,
+  channels,
+  sampleRate,
+  useInterimResults,
+  useSpeakerLabels,
+  usePunctuation
+}) => {
   const queryString = qs.stringify({
     encoding,
     channels,
     sample_rate: sampleRate,
-    interim_results: interimResults,
+    interim_results: useInterimResults,
+    punctuation: usePunctuation,
+    diarize: useSpeakerLabels,
   });
   return `${url}?${queryString}`;
 };
@@ -30,7 +40,9 @@ const toDeepgram = ({
   encoding = 'linear16', // linear16 means raw PCM audio (as 16-bit integers)
   channels = 1, // number of audio channels
   sampleRate = 16000, // sample rate of audio data
-  interimResults = true, // get interim results
+  useInterimResults = true, // get interim results
+  usePunctuation = true,
+  useSpeakerLabels = true,
   url = 'wss://brain.deepgram.com/v2/listen/stream',
 } = {}) => {
   if (!username || !password) return () => throwError(errors.requiredParams());
@@ -40,7 +52,15 @@ const toDeepgram = ({
     // const messageIn$ = concat(shortenedChunk$, of(lastMessage));
     const messageOut$ = concat(audioChunk$, lastMessage$).pipe(
       conduit({
-        url: getFullUrl({url, encoding, channels, sampleRate, interimResults}),
+        url: getFullUrl({
+          url,
+          encoding,
+          channels,
+          sampleRate,
+          useInterimResults,
+          useSpeakerLabels,
+          usePunctuation,
+        }),
         protocols: getAuthProtocol({username, password}),
         serializer: chunk => chunk, // Do not serialize input data as JSON
         deserializer: message => JSON.parse(message), // serialize output

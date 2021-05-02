@@ -12,6 +12,19 @@ yarn add @buccaneerai/stt-deepgram
 
 ⚠️ node.js only. This has not been tested on Browsers but it might be possible to make it work.  If you get it working, please make a PR!
 
+## Demo
+Create a .env file with your `DEEPGRAM_PASSWORD` and `DEEPGRAM_USERNAME`:
+```bash
+echo 'DEEPGRAM_PASSWORD=MYPASSWORD' >> .env
+echo 'DEEPGRAM_USERNAME=MYUSERNAME' >> .env
+```
+
+Run the demo!
+```bash
+yarn build # you must build the code before running the demo
+yarn demo run
+```
+
 ## API
 
 ### `toDeepgram`
