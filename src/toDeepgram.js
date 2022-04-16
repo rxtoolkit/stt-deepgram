@@ -66,7 +66,7 @@ const toDeepgram = ({
         deserializer: message => JSON.parse(message), // serialize output
       })
     );
-    const wordOut$ = messageOut$;
+    let wordOut$ = messageOut$;
     wordOut$.error$ = messageOut$.error$;
     return wordOut$;
   };
