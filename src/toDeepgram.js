@@ -1,6 +1,6 @@
 import qs from 'qs';
 import {concat,of,throwError} from 'rxjs';
-import {conduit} from '@bottlenose/rxws';
+import {conduit} from '@buccaneerai/rxjs-ws';
 
 import shortenChunks from './internals/shortenChunks';
 
@@ -66,7 +66,8 @@ const toDeepgram = ({
         deserializer: message => JSON.parse(message), // serialize output
       })
     );
-    const wordOut$ = messageOut$.pipe();
+    const wordOut$ = messageOut$;
+    wordOut$.error$ = messageOut$.error$;
     return wordOut$;
   };
 };

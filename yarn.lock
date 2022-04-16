@@ -904,15 +904,15 @@
     lodash "^4.17.15"
     rxjs "^6.5.4"
 
-"@bottlenose/rxws@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@bottlenose/rxws/-/rxws-0.7.0.tgz#a57dfbf21e854fc85fd81e5be46cf144177cb1d2"
-  integrity sha512-PD8oToT8sdTnNb0hEEgbxFLtBjjnLqTvzYYk+roev6nDuZ6Y+djfeSaXikQuQseMIL3OrFgG7cVg6aVW20pLzA==
+"@buccaneerai/rxjs-ws@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.pkg.github.com/download/@buccaneerai/rxjs-ws/1.1.0/a158eeca08bfe13ee0c46765b085554d978a796732fc9f873bdc31dc801d3a97#e9a12f145a1c379878f10c7870561dffcc75ff99"
+  integrity sha512-Oi91NqVZpGFqzrzUE0cIgF0Jo44/KiW6tJyOpedFDEajoj/ubUGTxLyFCVuRfMsImVNAhIwmgZX7tOp/0Nfp4Q==
   dependencies:
     isomorphic-ws "^4.0.1"
-    lodash "^4.17.15"
-    rxjs "^6.5.4"
-    ws "^7.2.1"
+    lodash "^4.17.20"
+    rxjs "^6.6.3"
+    ws "^7.4.5"
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents":
   version "2.1.8-no-fsevents"
@@ -2978,10 +2978,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^7.2.1:
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.3.tgz#1f9643de34a543b8edb124bdcbc457ae55a6e5cd"
-  integrity sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
+ws@^7.4.5:
+  version "7.5.7"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.7.tgz#9e0ac77ee50af70d58326ecff7e85eb3fa375e67"
+  integrity sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==
 
 y18n@^4.0.0:
   version "4.0.1"

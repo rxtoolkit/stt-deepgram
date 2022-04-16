@@ -1,6 +1,6 @@
 {
   "name": "@buccaneerai/stt-deepgram",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "👂 RxJS operator for realtime speech-to-text (STT/S2T) using Deepgram speeh-to-text",
   "main": "dist/index.js",
   "repository": "https://github.com/buccaneerai/stt-deepgram.git",
@@ -40,7 +40,7 @@
     "demo": "node ./scripts/demo.js"
   },
   "dependencies": {
-    "@bottlenose/rxws": "^0.7.0",
+    "@buccaneerai/rxjs-ws": "^1.1.0",
     "lodash": "^4.17.20",
     "qs": "^6.9.6",
     "rxjs": "^6.6.3"
