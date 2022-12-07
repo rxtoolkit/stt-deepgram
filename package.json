@@ -42,7 +42,7 @@
   "dependencies": {
     "@buccaneerai/rxjs-ws": "^1.1.0",
     "lodash": "^4.17.20",
-    "qs": "^6.9.6",
+    "qs": "^6.9.7",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
