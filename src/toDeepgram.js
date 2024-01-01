@@ -1,6 +1,6 @@
 import qs from 'qs';
 import {concat,of,throwError} from 'rxjs';
-import {conduit} from '@buccaneerai/rxjs-ws';
+import {conduit} from '@rxtk/ws';
 
 import shortenChunks from './internals/shortenChunks';
 

@@ -1,11 +1,8 @@
-# @buccaneerai/stt-deepgram
+# @rxtk/stt-deepgram
 > 👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the Deepgram speech-to-text API.
 
-## Installation
-This is a private package. It requires setting up access in your npm config.
-
 ```bash
-yarn add @buccaneerai/stt-deepgram
+yarn add @rxtk/stt-deepgram
 ```
 
 ⚠️ To run the Deepgram transcription pipeline, you will need to provide a deepgram username and password.
@@ -31,7 +28,7 @@ yarn demo run
 Stream audio speech data to transcription service via WebSocket and get transcripts back:
 ```js
 import {map} from 'rxjs/operators';
-import {toDeepgram} from '@buccaneerai/stt-deepgram';
+import {toDeepgram} from '@rxtk/stt-deepgram';
 
 // The pipeline can take a stream of audio chunks encoded as 
 // LINEAR16 (PCM encoded as 16-bit integers) in the form of a Buffer

@@ -1,16 +1,13 @@
 {
-  "name": "@buccaneerai/stt-deepgram",
+  "name": "@rxtk/stt-deepgram",
   "version": "2.2.1",
   "description": "👂 RxJS operator for realtime speech-to-text (STT/S2T) using Deepgram speeh-to-text",
   "main": "dist/index.js",
-  "repository": "https://github.com/buccaneerai/stt-deepgram.git",
+  "repository": "https://github.com/rxtoolkit/stt-deepgram.git",
   "author": "Buccaneer LLC <opensource@buccaneer.ai>",
-  "license": "UNLICENSED",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buccaneerai/stt-deepgram/issues"
+    "url": "https://github.com/rxtoolkit/stt-deepgram/issues"
   },
   "keywords": [
     "speech-to-text",
@@ -40,7 +37,7 @@
     "demo": "node ./scripts/demo.js"
   },
   "dependencies": {
-    "@buccaneerai/rxjs-ws": "^1.1.0",
+    "@rxtk/ws": "^1.1.1",
     "lodash": "^4.17.20",
     "qs": "^6.9.6",
     "rxjs": "^6.6.3"
