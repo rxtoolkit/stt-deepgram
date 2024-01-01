@@ -1,6 +1,6 @@
 {
   "name": "@rxtk/stt-deepgram",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "👂 RxJS operator for realtime speech-to-text (STT/S2T) using Deepgram speeh-to-text",
   "main": "dist/index.js",
   "repository": "https://github.com/rxtoolkit/stt-deepgram.git",
