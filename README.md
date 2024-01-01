@@ -2,6 +2,10 @@
 > 👂 An RxJS operator for real-time speech-to-text (STT/S2T) streaming using the Deepgram speech-to-text API.
 
 ```bash
+npm i @rxtk/stt-deepgram
+```
+
+```bash
 yarn add @rxtk/stt-deepgram
 ```
 
